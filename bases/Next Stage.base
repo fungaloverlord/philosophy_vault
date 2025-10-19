@@ -1,0 +1,12 @@
+views:
+  - type: table
+    name: Next Stage
+    filters:
+      and:
+        - note["type"] == "stage-note"
+        - note["status"] == "not-started"
+    order:
+      - file.name
+      - duration
+    sort: []
+    limit: 1

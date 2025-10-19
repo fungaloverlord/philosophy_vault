@@ -1,0 +1,12 @@
+views:
+  - type: table
+    name: Questions Unanswered
+    filters:
+      and:
+        - type == "question-note"
+    order:
+      - stage-name
+      - file.name
+      - branch
+    sort: []
+    limit: 10

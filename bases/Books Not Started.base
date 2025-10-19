@@ -1,0 +1,23 @@
+views:
+  - type: table
+    name: Books Not Started
+    filters:
+      and:
+        - note["type"] == "literature-note"
+        - note["status"] == "not-started"
+    order:
+      - stage
+      - file.name
+      - author
+      - status
+      - stage-name
+      - difficulty
+      - priority
+    sort:
+      - property: stage
+        direction: ASC
+    limit: 10
+    columnSize:
+      note.author: 142
+      note.stage-name: 241
+      note.difficulty: 110

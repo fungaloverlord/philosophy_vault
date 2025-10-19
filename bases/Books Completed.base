@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: Books Completed
+    filters:
+      and:
+        - note["type"] == "literature-note"
+        - note["status"] == "completed"
+    order:
+      - file.name
+      - author
+      - stage-name
+    sort: []
+    limit: 10

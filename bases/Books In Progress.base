@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Books In Progress
+    filters:
+      and:
+        - note["type"] == "literature-note"
+        - note["status"] == "in-progress"
+    order:
+      - file.name
+      - author
+      - stage-name
+      - reading-time
+    sort: []
+    columnSize:
+      file.name: 323

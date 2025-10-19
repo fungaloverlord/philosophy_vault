@@ -1,0 +1,17 @@
+views:
+  - type: table
+    name: Books by Priority - Critical
+    filters:
+      and:
+        - note["type"] == "literature-note"
+        - note["priority"] == "critical"
+    order:
+      - file.name
+      - author
+      - title
+      - stage-name
+      - status
+    sort: []
+    columnSize:
+      note.author: 129
+      note.title: 188

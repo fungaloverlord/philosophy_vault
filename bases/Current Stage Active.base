@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Current Stage Active
+    filters:
+      and:
+        - type == "stage-note"
+        - status == "in-progress"
+    order:
+      - file.name
+      - duration
+      - startdate
+      - finishdate
+    sort: []
+    columnSize:
+      note.startdate: 112

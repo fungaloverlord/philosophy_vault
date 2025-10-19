@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: Books by Branch - Ethics
+    filters:
+      and:
+        - type == "literature-note"
+    order:
+      - file.name
+      - author
+      - stage-name
+      - status
+      - branch
+    sort: []

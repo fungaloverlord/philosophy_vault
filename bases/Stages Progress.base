@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Stages Progress
+    filters:
+      and:
+        - note["type"] == "stage-note"
+    order:
+      - stage
+      - stage-name
+      - duration
+      - status
+    sort: []
+    columnSize:
+      note.stage-name: 246
+      note.duration: 142

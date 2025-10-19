@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: Revisitation Due
+    filters:
+      and:
+        - note["type"] == "literature-note"
+        - note["status"] == "completed"
+    order:
+      - file.name
+      - author
+      - title
+    sort: []
+    limit: 5
